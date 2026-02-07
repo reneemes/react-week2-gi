@@ -5,11 +5,7 @@ function TaskDetails({ tasks, updateTask, deleteTask }) {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const task = tasks.find((t) => t.id === id);
-
-  if (!task) {
-    return <p>Task not found</p>;
-  }
+  const task = tasks.find((task) => task.id === id);
 
   const handleUpdate = (newTitle) => {
     updateTask(id, newTitle);
