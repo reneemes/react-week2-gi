@@ -1,0 +1,50 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  font-size: 1.5rem;
+}
+
+.form__input {
+  margin: 10px 0;
+  padding: 8px 4px;
+  font-size: 1.3rem;
+}
+
+.form__btn {
+  padding: 8px 4px;
+  font-size: 1.3rem;
+}
+
+.search-results {
+  text-align: center;
+}
+
+.search-results__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.search-results__content--movie {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 250px;
+}
+
+.search-results__content--movie img {
+  border-radius: 10px 10px 0 0;
+  width: 250px;
+  height: auto;
+}
